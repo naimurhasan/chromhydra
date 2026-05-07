@@ -1,0 +1,53 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  unit:
+    name: unit · py${{ matrix.python }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - run: pytest -v
+
+  browser:
+    name: browser · ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -e ".[dev]"
+      - run: pytest -m browser -v
+      - name: doctor report
+        run: >
+          chromhydra doctor --mode compare --ip
+          --title "🐉 Chromhydra Doctor · ${{ matrix.os }}"
+          --markdown "$GITHUB_STEP_SUMMARY"
+          --json doctor-${{ matrix.os }}.json
+      - name: proof screenshots
+        run: python scripts/proof.py docs/proof/ci-${{ matrix.os }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: proof-${{ matrix.os }}
+          path: |
+            doctor-${{ matrix.os }}.json
+            docs/proof/ci-${{ matrix.os }}

@@ -1,0 +1,14 @@
+.RESOURCE/
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+dist/
+build/
+*.egg-info/
+latest_logs/
+archived_logs/
+downloaded_files/
+.pytest_cache/
+.ruff_cache/
+doctor-*.json

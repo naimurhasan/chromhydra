@@ -1,0 +1,44 @@
+{
+  "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "platform": "MacIntel",
+  "webdriver": false,
+  "brands": [],
+  "uadPlatform": "",
+  "platformVersion": "",
+  "architecture": "",
+  "fullVersionList": [],
+  "tz": "Asia/Dhaka",
+  "lang": "en-US",
+  "languages": [
+    "en-US",
+    "en"
+  ],
+  "worker": {
+    "ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "platform": "MacIntel",
+    "lang": "en-US",
+    "tz": "Asia/Dhaka",
+    "brands": []
+  },
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+  "headers": {
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "no-cache",
+    "host": "httpbin.org",
+    "origin": "https://example.com",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "referer": "https://example.com/",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "ip": {
+    "ip": "203.0.113.7",
+    "timezone": "Asia/Dhaka",
+    "country": "BD"
+  }
+}

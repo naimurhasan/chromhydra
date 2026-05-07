@@ -1,0 +1,58 @@
+{
+  "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+  "platform": "Win32",
+  "webdriver": false,
+  "brands": [
+    "Google Chrome",
+    "Chromium",
+    "Not(A:Brand"
+  ],
+  "uadPlatform": "Windows",
+  "platformVersion": "19.0.0",
+  "architecture": "x86",
+  "fullVersionList": [
+    "Google Chrome 155.0.8059.85",
+    "Chromium 155.0.8059.85",
+    "Not(A:Brand 24.0.0.0"
+  ],
+  "tz": "America/New_York",
+  "lang": "en-US",
+  "languages": [
+    "en-US"
+  ],
+  "worker": {
+    "ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36",
+    "platform": "MacIntel",
+    "lang": "en-US",
+    "tz": "America/New_York",
+    "brands": [
+      "Google Chrome",
+      "Chromium",
+      "Not(A:Brand"
+    ]
+  },
+  "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M2, Unspecified Version)",
+  "headers": {
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate, br, zstd",
+    "accept-language": "en-US",
+    "cache-control": "no-cache",
+    "host": "httpbin.org",
+    "origin": "https://example.com",
+    "pragma": "no-cache",
+    "priority": "u=1, i",
+    "referer": "https://example.com/",
+    "sec-ch-ua": "\"Google Chrome\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "cross-site",
+    "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36"
+  },
+  "ip": {
+    "ip": "203.0.113.7",
+    "timezone": "Asia/Dhaka",
+    "country": "BD"
+  }
+}
